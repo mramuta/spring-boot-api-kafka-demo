@@ -1,12 +1,12 @@
 # Spring Boot Api Kafka Consumer Demo
 This is a small project that contains a small REST API and a very basic Kafka consumer application.
 
-###Requirements
+### Requirements
 
 - Java 8
 - Docker
 
-###Setup
+### Setup
 1. Start the docker containers 
 
     `$ docker-compose up`
@@ -17,7 +17,7 @@ This is a small project that contains a small REST API and a very basic Kafka co
 
     `$ ./gradlew consumer:run`
 
-###API Operation
+### API Operation
 1. Get users by country
 
     GET /users?country=${country}
