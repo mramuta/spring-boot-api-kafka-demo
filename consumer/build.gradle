@@ -1,0 +1,26 @@
+plugins {
+    id "java"
+    id "application"
+    id "idea"
+}
+
+group = 'com.mramuta'
+version = "0.0.1"
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+repositories {
+    mavenCentral()
+    maven { url "https://packages.confluent.io/maven" }
+}
+
+dependencies {
+    implementation "org.slf4j:slf4j-simple:1.7.30"
+    implementation "org.apache.kafka:kafka-streams:2.8.1"
+    testImplementation "junit:junit:4.13.2"
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+}
+
+application {
+    mainClassName = "com.mramuta.api_kafka_demo.KafkaConsumerApplication"
+}
